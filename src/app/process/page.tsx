@@ -141,7 +141,7 @@ function Ride() {
       </h3>
       <List className="mt-8">
         <ListItem title="Real-time Status Updates">
-          Follow your bike's journey through the workshop with our Kanban-style
+          Follow your bike&apos;s journey through the workshop with our Kanban-style
           service tracker.
         </ListItem>
         <ListItem title="In-app Communication">
