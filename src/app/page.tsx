@@ -46,11 +46,11 @@ function Services() {
               streamline your workflow and customer handling.
             </ListItem>
             <ListItem title="Live Tracking">
-              No more guessing. Track the status of your bike's repair from
+              No more guessing. Track the status of your bike&apos;s repair from
               start to finish with live updates.
             </ListItem>
             <ListItem title="Future-Proof">
-              We're already working on integrations with major parts suppliers
+              We&apos;re already working on integrations with major parts suppliers
               to make quoting even easier for garages.
             </ListItem>
           </List>
@@ -92,7 +92,7 @@ export default async function Home() {
           <FadeInStagger className="mt-10" faster>
             <div className="mx-auto max-w-4xl">
               <p className="text-lg text-neutral-300 text-center">
-                BikeLink was developed in close collaboration with real garages and riders across the UK. From busy city shops to independent mechanics, we listened to their needs to build a platform that truly works. That's why top-rated garages are already signing up before launch.
+                BikeLink was developed in close collaboration with real garages and riders across the UK. From busy city shops to independent mechanics, we listened to their needs to build a platform that truly works. That&apos;s why top-rated garages are already signing up before launch.
               </p>
             </div>
           </FadeInStagger>
@@ -105,10 +105,10 @@ export default async function Home() {
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
-              We're Almost There
+              We&apos;re Almost There
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-neutral-600">
-              We're putting the final touches on something that's going to change the way riders and mechanics connect.
+              We&apos;re putting the final touches on something that&apos;s going to change the way riders and mechanics connect.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link

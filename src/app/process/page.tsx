@@ -68,7 +68,7 @@ function Find() {
         </p>
         <p>
           Filter your search by services offered, distance, or user ratings to
-          find the perfect fit for your bike's needs. We&#39;re all about connecting
+          find the perfect fit for your bike&apos;s needs. We&apos;re all about connecting
           you with the right people, right away.
         </p>
       </div>
@@ -91,8 +91,8 @@ function Book() {
     <Section title="Book" image={{ src: imageSelectReason, shape: 1 }}>
       <div className="space-y-6 text-base text-secondary-gray">
         <p>
-          Once you've found the right garage, getting a quote and booking your
-          service is just a few taps away. Submit your bike's details and the
+          Once you&apos;ve found the right garage, getting a quote and booking your
+          service is just a few taps away. Submit your bike&apos;s details and the
           services you need, and receive a{' '}
           <strong className="font-semibold text-primary-navy-blue">
             real-time quote
@@ -122,16 +122,16 @@ function Ride() {
     <Section title="Ride" image={{ src: imageBookConfirmed, shape: 2 }}>
       <div className="space-y-6 text-base text-secondary-gray">
         <p>
-          We believe in transparency. That's why BikeLink provides{' '}
+          We believe in transparency. That&apos;s why BikeLink provides{' '}
           <strong className="font-semibold text-primary-navy-blue">
             live tracking
           </strong>{' '}
-          of your bike's service status.
+          of your bike&apos;s service status.
         </p>
         <p>
           From the moment you drop off your keys to the second your bike is
-          ready for collection, you'll be kept in the loop. Once the job is
-          done, you'll get a notification, and you can get back to what matters
+          ready for collection, you&apos;ll be kept in the loop. Once the job is
+          done, you&apos;ll get a notification, and you can get back to what matters
           most: the ride.
         </p>
       </div>
