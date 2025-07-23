@@ -22,8 +22,8 @@ function TwitterIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 export const socialMediaProfiles = [
-  { title: 'Twitter', href: 'https://twitter.com', icon: TwitterIcon },
-  { title: 'Instagram', href: 'https://instagram.com', icon: InstagramIcon },
+  { title: 'Twitter', href: 'https://x.com/bikelinkapp', icon: TwitterIcon },
+  { title: 'Instagram', href: 'https://instagram.com/bikelinkapp', icon: InstagramIcon },
 ]
 
 export function SocialMedia({

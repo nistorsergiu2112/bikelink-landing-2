@@ -112,13 +112,13 @@ export default async function Home() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
-                href="https://twitter.com/bikelink"
+                href="https://x.com/bikelinkapp"
                 className="rounded-md bg-accent-orange px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-accent-orange/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-orange"
               >
                 Follow on Twitter
               </Link>
               <Link
-                href="https://instagram.com/bikelink"
+                href="https://instagram.com/bikelinkapp"
                 className="text-sm font-semibold leading-6 text-neutral-900 hover:text-accent-orange"
               >
                 Follow on Instagram <span aria-hidden="true">→</span>
