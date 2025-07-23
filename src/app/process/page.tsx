@@ -11,9 +11,9 @@ import { PageIntro } from '@/components/PageIntro'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { TagList, TagListItem } from '@/components/TagList'
-import imageLaptop from '@/images/laptop.jpg'
-import imageMeeting from '@/images/meeting.jpg'
-import imageWhiteboard from '@/images/whiteboard.jpg'
+import imageBookConfirmed from '@/images/book-confirmed.png'
+import imageSelectReason from '@/images/select-reason.png'
+import imageShowcase from '@/images/showcase-main-app.png'
 import { RootLayout } from '@/components/RootLayout'
 
 function Section({
@@ -40,10 +40,10 @@ function Section({
         <div className="mt-12 lg:mt-0 lg:w-148 lg:flex-none lg:group-even/section:order-first">
           <FadeIn>
             <div
-              className="font-display text-base font-semibold before:text-neutral-300 before:content-['/_'] after:text-neutral-950 after:content-[counter(section,decimal-leading-zero)]"
+              className="font-display text-base font-semibold before:text-neutral-300 before:content-['/_'] after:text-accent-orange after:content-[counter(section,decimal-leading-zero)]"
               aria-hidden="true"
             />
-            <h2 className="mt-2 font-display text-3xl font-medium tracking-tight text-neutral-950 sm:text-4xl">
+            <h2 className="mt-2 font-display text-3xl font-medium tracking-tight text-primary-navy-blue sm:text-4xl">
               {title}
             </h2>
             <div className="mt-6">{children}</div>
@@ -54,218 +54,128 @@ function Section({
   )
 }
 
-function Discover() {
+function Find() {
   return (
-    <Section title="Discover" image={{ src: imageWhiteboard }}>
-      <div className="space-y-6 text-base text-neutral-600">
+    <Section title="Find" image={{ src: imageShowcase }}>
+      <div className="space-y-6 text-base text-secondary-gray">
         <p>
-          We work closely with our clients to understand their{' '}
-          <strong className="font-semibold text-neutral-950">needs</strong> and
-          goals, embedding ourselves in their every day operations to understand
-          what makes their business tick.
+          No more endlessly searching for a reliable mechanic. With BikeLink,
+          you can instantly{' '}
+          <strong className="font-semibold text-primary-navy-blue">
+            discover
+          </strong>{' '}
+          trusted garages in your area using our map-based interface.
         </p>
         <p>
-          Our team of private investigators shadow the company director’s for
-          several weeks while our account managers focus on going through their
-          trash. Our senior security experts then perform social engineering
-          hacks to gain access to their{' '}
-          <strong className="font-semibold text-neutral-950">business</strong>{' '}
-          accounts — handing that information over to our forensic accounting
-          team.
-        </p>
-        <p>
-          Once the full audit is complete, we report back with a comprehensive{' '}
-          <strong className="font-semibold text-neutral-950">plan</strong> and,
-          more importantly, a budget.
+          Filter your search by services offered, distance, or user ratings to
+          find the perfect fit for your bike's needs. We&#39;re all about connecting
+          you with the right people, right away.
         </p>
       </div>
 
-      <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
-        Included in this phase
+      <h3 className="mt-12 font-display text-base font-semibold text-primary-navy-blue">
+        Key features
       </h3>
       <TagList className="mt-4">
-        <TagListItem>In-depth questionnaires</TagListItem>
-        <TagListItem>Feasibility studies</TagListItem>
-        <TagListItem>Blood samples</TagListItem>
-        <TagListItem>Employee surveys</TagListItem>
-        <TagListItem>Proofs-of-concept</TagListItem>
-        <TagListItem>Forensic audit</TagListItem>
+        <TagListItem>Map-based search</TagListItem>
+        <TagListItem>Advanced filtering</TagListItem>
+        <TagListItem>Verified garage profiles</TagListItem>
+        <TagListItem>User reviews & ratings</TagListItem>
       </TagList>
     </Section>
   )
 }
 
-function Build() {
+function Book() {
   return (
-    <Section title="Build" image={{ src: imageLaptop, shape: 1 }}>
-      <div className="space-y-6 text-base text-neutral-600">
+    <Section title="Book" image={{ src: imageSelectReason, shape: 1 }}>
+      <div className="space-y-6 text-base text-secondary-gray">
         <p>
-          Based off of the discovery phase, we develop a comprehensive roadmap
-          for each product and start working towards delivery. The roadmap is an
-          intricately tangled mess of technical nonsense designed to drag the
-          project out as long as possible.
+          Once you've found the right garage, getting a quote and booking your
+          service is just a few taps away. Submit your bike's details and the
+          services you need, and receive a{' '}
+          <strong className="font-semibold text-primary-navy-blue">
+            real-time quote
+          </strong>
+          .
         </p>
         <p>
-          Each client is assigned a key account manager to keep lines of
-          communication open and obscure the actual progress of the project.
-          They act as a buffer between the client’s incessant nagging and the
-          development team who are hard at work scouring open source projects
-          for code to re-purpose.
-        </p>
-        <p>
-          Our account managers are trained to only reply to client emails after
-          9pm, several days after the initial email. This reinforces the general
-          aura that we are very busy and dissuades clients from asking for
-          changes.
+          Accept the quote to instantly book your appointment. No phone calls,
+          no waiting for email responses. Just a simple, streamlined process
+          that puts you in control.
         </p>
       </div>
 
       <Blockquote
-        author={{ name: 'Debra Fiscal', role: 'CEO of Unseal' }}
+        author={{ name: 'A Happy Rider', role: 'Future BikeLink User' }}
         className="mt-12"
       >
-        Studio were so regular with their progress updates we almost began to
-        think they were automated!
+        Finally, a way to book a service without the back-and-forth. This is
+        going to be a game-changer!
       </Blockquote>
     </Section>
   )
 }
 
-function Deliver() {
+function Ride() {
   return (
-    <Section title="Deliver" image={{ src: imageMeeting, shape: 2 }}>
-      <div className="space-y-6 text-base text-neutral-600">
+    <Section title="Ride" image={{ src: imageBookConfirmed, shape: 2 }}>
+      <div className="space-y-6 text-base text-secondary-gray">
         <p>
-          About halfway through the Build phase, we push each project out by 6
-          weeks due to a change in{' '}
-          <strong className="font-semibold text-neutral-950">
-            requirements
-          </strong>
-          . This allows us to increase the budget a final time before launch.
+          We believe in transparency. That's why BikeLink provides{' '}
+          <strong className="font-semibold text-primary-navy-blue">
+            live tracking
+          </strong>{' '}
+          of your bike's service status.
         </p>
         <p>
-          Despite largely using pre-built components, most of the{' '}
-          <strong className="font-semibold text-neutral-950">progress</strong>{' '}
-          on each project takes place in the final 24 hours. The development
-          time allocated to each client is actually spent making augmented
-          reality demos that go viral on social media.
-        </p>
-        <p>
-          We ensure that the main pages of the site are{' '}
-          <strong className="font-semibold text-neutral-950">
-            fully functional
-          </strong>{' '}
-          at launch — the auxiliary pages will, of course, be lorem ipusm shells
-          which get updated as part of our exorbitant{' '}
-          <strong className="font-semibold text-neutral-950">
-            maintenance
-          </strong>{' '}
-          retainer.
+          From the moment you drop off your keys to the second your bike is
+          ready for collection, you'll be kept in the loop. Once the job is
+          done, you'll get a notification, and you can get back to what matters
+          most: the ride.
         </p>
       </div>
 
-      <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
-        Included in this phase
+      <h3 className="mt-12 font-display text-base font-semibold text-primary-navy-blue">
+        What you get
       </h3>
       <List className="mt-8">
-        <ListItem title="Testing">
-          Our projects always have 100% test coverage, which would be impressive
-          if our tests weren’t as porous as a sieve.
+        <ListItem title="Real-time Status Updates">
+          Follow your bike's journey through the workshop with our Kanban-style
+          service tracker.
         </ListItem>
-        <ListItem title="Infrastructure">
-          To ensure reliability we only use the best Digital Ocean droplets that
-          $4 a month can buy.
+        <ListItem title="In-app Communication">
+          Easily communicate with the garage for any questions or updates.
         </ListItem>
-        <ListItem title="Support">
-          Because we hold the API keys for every critical service your business
-          uses, you can expect a lifetime of support, and invoices, from us.
+        <ListItem title="Secure Payments">
+          Pay for your service securely in the app once the work is complete.
         </ListItem>
       </List>
     </Section>
   )
 }
 
-function Values() {
-  return (
-    <div className="relative mt-24 pt-24 sm:mt-32 sm:pt-32 lg:mt-40 lg:pt-40">
-      <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-linear-to-b from-neutral-50">
-        <GridPattern
-          className="absolute inset-0 h-full w-full mask-[linear-gradient(to_bottom_left,white_40%,transparent_50%)] fill-neutral-100 stroke-neutral-950/5"
-          yOffset={-270}
-        />
-      </div>
-
-      <SectionIntro
-        eyebrow="Our values"
-        title="Balancing reliability and innovation"
-      >
-        <p>
-          We strive to stay at the forefront of emerging trends and
-          technologies, while completely ignoring them and forking that old
-          Rails project we feel comfortable using. We stand by our core values
-          to justify that decision.
-        </p>
-      </SectionIntro>
-
-      <Container className="mt-24">
-        <GridList>
-          <GridListItem title="Meticulous">
-            The first part of any partnership is getting our designer to put
-            your logo in our template. The second step is getting them to do the
-            colors.
-          </GridListItem>
-          <GridListItem title="Efficient">
-            We pride ourselves on never missing a deadline which is easy because
-            most of the work was done years ago.
-          </GridListItem>
-          <GridListItem title="Adaptable">
-            Every business has unique needs and our greatest challenge is
-            shoe-horning those needs into something we already built.
-          </GridListItem>
-          <GridListItem title="Honest">
-            We are transparent about all of our processes, banking on the simple
-            fact our clients never actually read anything.
-          </GridListItem>
-          <GridListItem title="Loyal">
-            We foster long-term relationships with our clients that go beyond
-            just delivering a product, allowing us to invoice them for decades.
-          </GridListItem>
-          <GridListItem title="Innovative">
-            The technological landscape is always evolving and so are we. We are
-            constantly on the lookout for new open source projects to clone.
-          </GridListItem>
-        </GridList>
-      </Container>
-    </div>
-  )
-}
-
 export const metadata: Metadata = {
-  title: 'Our Process',
+  title: 'How It Works',
   description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
+    'Find, book, and ride. It’s that simple. Discover how BikeLink is revolutionizing motorcycle repairs.',
 }
 
 export default function Process() {
   return (
     <RootLayout>
-      <PageIntro eyebrow="Our process" title="How we work">
+      <PageIntro eyebrow="How It Works" title="Find. Book. Ride.">
         <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+          We&apos;ve simplified the entire process of motorcycle maintenance.
+          Here’s how you can get your bike serviced in just a few simple steps.
         </p>
       </PageIntro>
 
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
-        <Discover />
-        <Build />
-        <Deliver />
+        <Find />
+        <Book />
+        <Ride />
       </div>
-
-      <Values />
-
-      <ContactSection />
     </RootLayout>
   )
 }
